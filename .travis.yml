@@ -3,5 +3,7 @@ python: "3.6"
 arch:
   - amd64
   - arm64
-install: build/build.sh --travis
+install:
+  - pip install listener
+  - build/build.sh --travis
 script: pytest
