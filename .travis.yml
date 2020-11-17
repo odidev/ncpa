@@ -1,9 +1,7 @@
 language: python
-python: "3.6"
+python: "2.7"
 arch:
   - amd64
   - arm64
-install:
-  - pip install listener
-  - build/build.sh --travis
+install: build/build.sh --travis
 script: pytest
