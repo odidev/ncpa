@@ -3,5 +3,7 @@ python: "2.7"
 arch:
   - amd64
   - arm64
-install: build/build.sh --travis
+install: 
+  - pip install cryptography --no-cache-dir
+  - build/build.sh --travis
 script: pytest
